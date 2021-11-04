@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jif-api"
+version = "0.0.1"
+description = "RESTful API for pyadi-jif"
+authors = ["Travis F. Collins <travis.collins@analog.com>"]
+license = "EPL-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pyadi-jif = {git = "https://github.com/analogdevicesinc/pyadi-jif.git", branch="main"}
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.10b0"
+mypy = "^0.910"
+pytest = "^6.2.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
